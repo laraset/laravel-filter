@@ -1,0 +1,33 @@
+{
+    "name": "laraset/laravel-filter",
+    "description": "Filtering Eloquent queries based on HTTP requests.",
+    "keywords": [
+        "eloquent",
+        "filter",
+        "laraset",
+        "laravel",
+        "model",
+        "request",
+        "warl"
+    ],
+    "homepage": "https://github.com/laraset/laravel-filter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgenij Myasnikov",
+            "email": "evgenij.myasnikov@gmail.com",
+            "homepage": "https://github.com/emyasnikov"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/database": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laraset\\LaravelFilter\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
