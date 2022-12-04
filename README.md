@@ -6,6 +6,14 @@
 
 This package contains a filter class to make HTTP requests filterable using Eloquent queries.
 
+## Installation
+
+```bash
+composer require laraset/laravel-filter
+```
+
+## Usage
+
 To use it properly just add Filters folder inside App\Http namespace like this:
 
 ```php
