@@ -1,4 +1,4 @@
-# TODO
+# To Do
 
 - Make command
 - Tests
