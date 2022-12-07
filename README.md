@@ -6,6 +6,14 @@
 
 This package contains a filter class to make HTTP requests filterable using Eloquent queries.
 
+## Installation
+
+```bash
+composer require laraset/laravel-filter
+```
+
+## Usage
+
 To use it properly just add Filters folder inside App\Http namespace like this:
 
 ```php
@@ -48,7 +56,23 @@ class TestFilter extends Filter
 }
 ```
 
-This filter class can then be used inside controller class to reduce the amount of code to be written for request handlers.
+To apply filters on model trait has to be used:
+
+```php
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Laraset\LaravelFilter\HasFilter;
+
+class Test extends Model
+{
+    use HasFilter;
+}
+```
+
+This filter class can then be used inside controller class to reduce the amount of code to be written for request handlers:
 
 ```php
 public function index(Request $request, TestFilter $filter)
